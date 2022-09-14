@@ -32,3 +32,4 @@ for (let k = 0; k < A.length; k++) {
 console.log(count);
 
 // 결과는 잘 나오지만 제출시 틀림
+// 3%에서 실패
