@@ -1,6 +1,6 @@
 // 좋다
 
-let input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+let input = require("fs").readFileSync("example.txt").toString().split("\n");
 
 let arr = input[1].split(" ").map(Number);
 let A = arr.sort((a, b) => a - b);
