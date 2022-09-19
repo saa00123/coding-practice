@@ -8,21 +8,48 @@ let count = 0;
 
 for (let k = 0; k < A.length; k++) {
   let i = 0,
-    j = k - 1;
+    j = A.length - 1;
 
   while (i < j) {
     if (A[i] + A[j] < A[k]) {
       i++;
     } else if (A[i] + A[j] > A[k]) {
-      j++;
+      j--;
     } else {
-      count++;
-      break;
+      if (k != i && k != j) {
+        count++;
+        break;
+      }
+      if (i == k) {
+        i++;
+      }
+      if (j == k) {
+        j--;
+      }
     }
   }
 }
-
 console.log(count);
+
+// for (let k = 0; k < A.length; k++) {
+//   let i = 0,
+//     j = k - 1;
+
+//   while (i < j) {
+//     if (A[i] + A[j] < A[k]) {
+//       i++;
+//     } else if (A[i] + A[j] > A[k]) {
+//       j++;
+//     } else {
+//       count++;
+//       break;
+//     }
+//   }
+// }
+
+// console.log(count);
+
+// 7%에서 실패
 
 // for (let k = 0; k < A.length; k++) {
 //   let sum = A[k];
