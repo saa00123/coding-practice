@@ -20,6 +20,7 @@ for (let k = 0; k < A.length; k++) {
         i++;
       } else if (j == k) {
         j--;
+      } else if (A[i]) {
       }
     } else if (A[i] + A[j] < sum) {
       i++;
