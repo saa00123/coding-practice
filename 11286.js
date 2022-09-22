@@ -70,7 +70,7 @@ class AbsoluteMinHeap {
     }
     if (
       rightIndex < length &&
-      (this.heap[rightIndex][0] < this.heap[smallestIndex][0] ||
+      (this.heap[rightIndex][1] < this.heap[smallestIndex][1] ||
         (this.heap[rightIndex][0] == this.heap[smallestIndex][0] &&
           this.heap[rightIndex][1] < this.heap[smallestIndex][1]))
     ) {
@@ -81,6 +81,7 @@ class AbsoluteMinHeap {
       this.sinkDown(smallestIndex);
     }
   }
+  // 절댓값이 같은 경우 추가 필요
 }
 
 let answer = [];
